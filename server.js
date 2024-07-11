@@ -6,8 +6,8 @@ app.use(express.static('public'))
 require('dotenv').config();
 const mongoose = require('mongoose');
 //mongoose.connect('mongodb://127.0.0.1:27017/test');
-mongoose.connect(process.env.DB);
-console.log(process.env.DB);
+mongoose.connect(process.env.MONGODB_URI );
+console.log(process.env.MONGODB_URI );
 
 
 //открыть дб
